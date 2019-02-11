@@ -96,8 +96,8 @@ class word2vec():
     # TRAIN W2V model
     def train(self, training_data):
         # INITIALIZE WEIGHT MATRICES
-        self.w1 = np.random.uniform(-0.8, 0.8, (self.v_count, self.n))     # context matrix
-        self.w2 = np.random.uniform(-0.8, 0.8, (self.n, self.v_count))     # embedding matrix
+        self.w1 = np.random.uniform(-0.8, 0.8, (self.v_count, self.n))     # embedding matrix
+        self.w2 = np.random.uniform(-0.8, 0.8, (self.n, self.v_count))     # context matrix
         
         # CYCLE THROUGH EACH EPOCH
         for i in range(0, self.epochs):
